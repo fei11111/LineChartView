@@ -251,10 +251,17 @@ public class LineChartView extends View {
             //4.点连线
             if (previousDataX != 0) {
                 canvas.drawLine(previousDataX, previousDataY, dataX, dataY, mLinePaint);
-                //5.画点上的值
             }
             previousDataX = dataX;
             previousDataY = dataY;
+            //5.画点上的值
+            mPaint.getTextBounds(mChartDatas.get(i).getValue(), 0, mChartDatas.get(i).getValue().length(), mTextBounds);
+            textWidth = mTextBounds.width();
+            textHeight = mTextBounds.height();
+            // 圆点x位置-文本一半
+            float textLeft = dataX - textWidth / 2;
+            float textTop = dataY - mCircleRadius - textHeight / 2;
+            canvas.drawText(mChartDatas.get(i).getValue(), textLeft, textTop + dy, mPaint);
         }
         //2.3x轴箭头
         //x轴箭头left = x轴right+箭头间距
