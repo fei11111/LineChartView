@@ -2,9 +2,28 @@
 <resources>
 
     <declare-styleable name="LineChartView">
+        <!-- 字体大小 -->
         <attr name="fontSize" format="dimension" />
+        <!-- 线宽度 -->
         <attr name="lineWidth" format="dimension" />
+        <!-- 折线颜色 -->
         <attr name="lineColor" format="color" />
+        <!--x,y 轴颜色 -->
+        <attr name="axleColor" format="color" />
+        <!-- 箭头高度 -->
+        <attr name="arrowHeight" format="dimension" />
+        <!-- 箭头到最近刻度间距 -->
+        <attr name="arrowSpace" format="dimension" />
+        <!-- y轴字体水平间距-->
+        <attr name="yFontHorizontalSpace" format="dimension" />
+        <!--x轴字体水平间距-->
+        <attr name="xFontHorizontalSpace" format="dimension" />
+        <!--x轴字体垂直间距-->
+        <attr name="xFontVerticalSpace" format="dimension" />
+        <!--圆半径-->
+        <attr name="circleRadius" format="dimension" />
+        <!-- 刻度宽度 -->
+        <attr name="markLineWidth" format="dimension" />
     </declare-styleable>
 
 </resources>

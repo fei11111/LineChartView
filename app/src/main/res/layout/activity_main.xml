@@ -10,8 +10,10 @@
         android:layout_height="match_parent">
 
         <com.fei.linechartview.LineChartView
+            android:id="@+id/line_chart_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
 
     </HorizontalScrollView>
 
